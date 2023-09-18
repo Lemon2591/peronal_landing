@@ -95,6 +95,14 @@
         height: max-content;
     }
 
+    .testimonials_title {
+        height: 100%;
+    }
+
+    .contact_title {
+        height: unset;
+    }
+
     .header-left>p {
         font-size: 16px;
         padding: 10px 10px;

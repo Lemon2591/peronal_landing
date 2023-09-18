@@ -7,8 +7,13 @@ import { loadFull } from "tsparticles";
 import { settingPar } from "../../ultill/settingPar";
 import Slider from "react-slick";
 import Slide_one from "./Slide_one";
-import { gsap } from "gsap";
+
 import { FcNext } from "react-icons/fc";
+import {
+  AiOutlineFacebook,
+  AiOutlineGithub,
+  AiOutlineLinkedin,
+} from "react-icons/ai";
 
 function Home() {
   const [currentSlide, setCurrentSlide] = useState<any>(0);
@@ -33,6 +38,16 @@ function Home() {
     slidesToScroll: 1,
     nextArrow: <></>,
     prevArrow: <></>,
+  };
+
+  const settings_two = {
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    speed: 500,
+    autoplaySpeed: 3000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
   };
 
   return (
@@ -331,26 +346,134 @@ function Home() {
       </div>
 
       <div className="my_testimonials">
-        <div className="project-title">
-          <h1>Testimonials</h1>
+        <div className="project-title testimonials_title">
+          <h1 data-aos="fade-up">Testimonials</h1>
           <div>
             <div className="text_container">
-              <p>
-                “Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consectetur unde reprehenderit aperiam quaerat fugiat
-                repudiandae explicabo animi minima fuga beatae illum eligendi
-                incidunt consequatur. Amet dolores excepturi earum unde iusto.”
+              <p data-aos="fade-up">
+                “I enjoy building software that makes peoples' lives easier by
+                writing elegant, performant, and maintainable frontend code. I
+                also enjoy petting every cat I see.”
               </p>
-              <div>
+              <div data-aos="fade-up">
                 <img
                   src="https://preview.colorlib.com/theme/create/images/person_4.jpg.webp"
                   alt=""
                 />
-                <span>Robert Spears</span>
+                <span>Anh Tuan</span>
               </div>
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="my_testimonials contact">
+        <div className="project-title testimonials_title contact_title">
+          <h1>Contact</h1>
+          <div className="contact-container">
+            <div>
+              <div className="form_left">
+                <h1>Keep In Touch !</h1>
+                <div>
+                  <label htmlFor="name">Full Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Fill your full name, please !"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="email">Email</label>
+                  <input
+                    type="text"
+                    name="email"
+                    placeholder="Fill your email, please !"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="phone">Phone Number</label>
+                  <input
+                    type="text"
+                    name="phone"
+                    placeholder="Fill your phone number, please !"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="message">Message</label>
+                  <textarea
+                    // type="text"
+                    name="message"
+                    placeholder="Type some message !"
+                  />
+                </div>
+                <div>
+                  <a>Send contact</a>
+                </div>
+              </div>
+              <div className="add_right">
+                <div>
+                  <h6>Address</h6>
+                  <a>79 Cau Giay, Yen Hoa, Cau Giay, Ha Noi</a>
+                </div>
+
+                <div>
+                  <h6>Phone</h6>
+                  <a>0868158218</a>
+                </div>
+
+                <div>
+                  <h6>Email Address</h6>
+                  <a>cnnhok6262@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="footer-clean">
+        <footer>
+          <div className="footer_container">
+            <div className="footer-left">
+              <ul>
+                <li>Follow me: </li>
+                <li>
+                  <a href="">
+                    <i>
+                      <AiOutlineFacebook />
+                    </i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="">
+                    <i>
+                      <AiOutlineGithub />
+                    </i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="">
+                    <i>
+                      <AiOutlineLinkedin />
+                    </i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="footer-center">
+              <p>
+                Built and designed by Lemondev.
+                <br />
+                Copyright © 2023 All Rights Reserved.
+              </p>
+            </div>
+            <div></div>
+          </div>
+        </footer>
       </div>
     </>
   );

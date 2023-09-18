@@ -14,8 +14,8 @@ const route_container: IRoute[] = [
     href: "/",
   },
   {
-    text: "Portfolio",
-    href: "/portfolio",
+    text: "Products",
+    href: "/products",
   },
   {
     text: "About",

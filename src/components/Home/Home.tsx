@@ -368,7 +368,7 @@ function Home() {
       </div>
 
       <div className="contact">
-        <div className="project-title testimonials_title contact_title">
+        <div className="project-title  contact_title">
           <h1>Contact</h1>
           <div className="contact-container">
             <div>

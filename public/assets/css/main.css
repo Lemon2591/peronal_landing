@@ -518,7 +518,7 @@ body::-webkit-scrollbar {
 
 .project {
     position: relative;
-    height: 125vh;
+    height: max-content;
 }
 
 /* .project-container {
@@ -627,7 +627,12 @@ body::-webkit-scrollbar {
 .header_mobile {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: space-between;
+
+}
+
+.header_mobile>.header-left {
+    margin-left: 10px;
 }
 
 .header_mobile_list {
@@ -711,4 +716,22 @@ body::-webkit-scrollbar {
 .show_header_mb {
     transition: .3s;
     transform: translateX(0);
+}
+
+.text_container {
+    max-width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text_container>p {
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.my_testimonials {
+    background-color: #fff;
 }

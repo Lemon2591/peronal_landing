@@ -329,6 +329,29 @@ function Home() {
           </div>
         </div>
       </div>
+
+      <div className="my_testimonials">
+        <div className="project-title">
+          <h1>Testimonials</h1>
+          <div>
+            <div className="text_container">
+              <p>
+                “Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consectetur unde reprehenderit aperiam quaerat fugiat
+                repudiandae explicabo animi minima fuga beatae illum eligendi
+                incidunt consequatur. Amet dolores excepturi earum unde iusto.”
+              </p>
+              <div>
+                <img
+                  src="https://preview.colorlib.com/theme/create/images/person_4.jpg.webp"
+                  alt=""
+                />
+                <span>Robert Spears</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

@@ -72,6 +72,9 @@ export const Header: FC = () => {
         </div>
 
         <div className="header_mobile">
+          <div className="header-left">
+            <p>Anhh.</p>
+          </div>
           <div
             className="header_mobile_icon"
             onClick={() => setShowHeaderMobile(!showHeaderMobile)}

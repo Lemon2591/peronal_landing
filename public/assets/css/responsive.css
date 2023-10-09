@@ -3,6 +3,9 @@
         display: none;
     }
 
+    .project-carousel_mb {
+        display: none;
+    }
 }
 
 @media (min-width:740px) and (max-width:1025px) {
@@ -13,6 +16,19 @@
     .my_testimonials {
         margin-top: -5px;
         height: 520px;
+    }
+
+    .project-carousel-flex {
+        display: block;
+        height: max-content;
+    }
+
+    .project-carousel-flex>div {
+        max-width: 100%;
+    }
+
+    .project-carousel-img {
+        margin-bottom: 30px;
     }
 }
 
@@ -145,5 +161,25 @@
         padding: 10px 0;
     }
 
+    .project-carousel_pc {
+        display: none;
+    }
 
+    .project-carousel-flex {
+        display: block;
+        height: max-content;
+        padding: 15px;
+    }
+
+    .project-carousel-flex>div {
+        max-width: 100%;
+    }
+
+    .project-carousel-img {
+        margin-bottom: 30px;
+    }
+
+    .project-carousel-details {
+        margin: 0;
+    }
 }

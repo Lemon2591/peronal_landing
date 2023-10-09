@@ -29,18 +29,6 @@ function Home() {
   );
 
   const settings = {
-    dots: false,
-    infinite: true,
-    autoplay: true,
-    speed: 500,
-    autoplaySpeed: 3000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    nextArrow: <></>,
-    prevArrow: <></>,
-  };
-
-  const settings_two = {
     dots: true,
     infinite: true,
     autoplay: true,
@@ -48,6 +36,9 @@ function Home() {
     autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    appendDots: (dots: any) => <ul className="dot_slick">{dots}</ul>,
+    nextArrow: <></>,
+    prevArrow: <></>,
   };
 
   return (
@@ -313,29 +304,154 @@ function Home() {
               <Slider {...settings}>
                 <div>
                   <div
-                    className="project-carousel-img"
                     style={{
-                      backgroundImage:
-                        "url(https://is2-ssl.mzstatic.com/image/thumb/divxDY27bQOH7PPRX2wfJQ/2500x1406.jpg)",
+                      padding: "25px 25px 50px 25px",
+                      backgroundColor: "#fff",
                     }}
                   >
-                    <div className="project-carousel-btn">
-                      <a href="">Visit now</a>
-                      <a href="">View souce</a>
+                    <div className="project-carousel-flex">
+                      <div className="project-carousel-img">
+                        <img src="./assets/img/home/project_a.png" alt="ing" />
+                      </div>
+                      <div className="project-carousel-details">
+                        <div>
+                          <div>
+                            <h6>Alo Doctor</h6>
+                          </div>
+                          <div>
+                            <span>Mô tả</span>
+                            <p>
+                              Một nền tảng chăm sóc sức khoẻ, người dùng có thể
+                              đặt bác sĩ tại nhà, đặt lịch khám bệnh tại cơ sở y
+                              tế và mua bảo hiểm. Ngoài ra, người dùng dùng có
+                              thể trò chuyện trực tiếp qua hệ thống nhắn tin
+                              Real-time của ứng dụng.
+                            </p>
+                          </div>
+                          <div>
+                            <span>Thời gian - Nền tảng</span>
+                            <p>2022 - Web Application</p>
+                          </div>
+                        </div>
+                        <div className="project-carousel-btn">
+                          <a
+                            href="https://alodoctor.vercel.app"
+                            target="_blank"
+                          >
+                            Visit now
+                          </a>
+                          <a href="">View souce</a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div>
                   <div
-                    className="project-carousel-img"
                     style={{
-                      backgroundImage:
-                        "url(https://is2-ssl.mzstatic.com/image/thumb/divxDY27bQOH7PPRX2wfJQ/2500x1406.jpg)",
+                      padding: "25px 25px 50px 25px",
+                      backgroundColor: "#fff",
                     }}
                   >
-                    <div className="project-carousel-btn">
-                      <a href="">Visit now</a>
-                      <a href="">View souce</a>
+                    <div className="project-carousel-flex">
+                      <div className="project-carousel-img">
+                        <img src="./assets/img/home/project_b.png" alt="ing" />
+                      </div>
+                      <div className="project-carousel-details">
+                        <div>
+                          <div>
+                            <h6>Edubin</h6>
+                          </div>
+                          <div>
+                            <span>Mô tả</span>
+                            <p>
+                              Một landing page bán khoá học, nhận diện thương
+                              hiệu.
+                            </p>
+                          </div>
+                          <div>
+                            <span>Thời gian - Nền tảng</span>
+                            <p>2022 - Website</p>
+                          </div>
+                        </div>
+                        <div className="project-carousel-btn">
+                          <a href="https://edubin.vercel.app" target="_blank">
+                            Visit now
+                          </a>
+                          <a href="">View souce</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div
+                    style={{
+                      padding: "25px 25px 50px 25px",
+                      backgroundColor: "#fff",
+                    }}
+                  >
+                    <div className="project-carousel-flex">
+                      <div className="project-carousel-img">
+                        <img src="./assets/img/home/project_c.png" alt="ing" />
+                      </div>
+                      <div className="project-carousel-details">
+                        <div>
+                          <div>
+                            <h6>Tịnh Tâm An</h6>
+                          </div>
+                          <div>
+                            <span>Mô tả</span>
+                            <p>Website Ecommerce về sản phẩm làm đẹp và spa.</p>
+                          </div>
+                          <div>
+                            <span>Thời gian - Nền tảng</span>
+                            <p>2022 - Website</p>
+                          </div>
+                        </div>
+                        <div className="project-carousel-btn">
+                          <a href="" target="_blank">
+                            Visit now
+                          </a>
+                          <a href="">View souce</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    style={{
+                      padding: "25px 25px 50px 25px",
+                      backgroundColor: "#fff",
+                    }}
+                  >
+                    <div className="project-carousel-flex">
+                      <div className="project-carousel-img">
+                        <img src="./assets/img/home/project_d.png" alt="ing" />
+                      </div>
+                      <div className="project-carousel-details">
+                        <div>
+                          <div>
+                            <h6>Slim</h6>
+                          </div>
+                          <div>
+                            <span>Mô tả</span>
+                            <p>Website Ecommerce về thực phẩm và healthy.</p>
+                          </div>
+                          <div>
+                            <span>Thời gian - Nền tảng</span>
+                            <p>2022 - Website</p>
+                          </div>
+                        </div>
+                        <div className="project-carousel-btn">
+                          <a href="" target="_blank">
+                            Visit now
+                          </a>
+                          <a href="">View souce</a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -356,10 +472,7 @@ function Home() {
                 also enjoy petting every cat I see.”
               </p>
               <div data-aos="fade-up">
-                <img
-                  src="https://preview.colorlib.com/theme/create/images/person_4.jpg.webp"
-                  alt=""
-                />
+                <img src="./assets/img/home/IMG_0451.JPG" alt="" />
                 <span>Anh Tuan</span>
               </div>
             </div>

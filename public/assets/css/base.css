@@ -43,6 +43,7 @@ ul {
 }
 
 ::placeholder {
+    font-size: 12px;
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #bbb;
     opacity: 1;

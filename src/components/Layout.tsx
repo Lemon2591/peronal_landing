@@ -15,10 +15,6 @@ const Layout: FC<{ children?: any; webViewMobile: boolean; web: string }> = ({
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
-        <meta
-          name="viewport"
-          content="width=device-width,  initial-scale=1, maximum-scale=1, ser-scalable=0"
-        />
       </Head>
       {/* <MetaSeo {...dataSeo} /> */}
       <div>

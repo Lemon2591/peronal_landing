@@ -4,8 +4,6 @@ import Head from "next/head";
 const Layout: FC<{ children?: any; webViewMobile: boolean; web: string }> = ({
   children,
 }) => {
-  const dataSeo = {};
-
   return (
     <>
       <Head>
@@ -15,11 +13,16 @@ const Layout: FC<{ children?: any; webViewMobile: boolean; web: string }> = ({
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
+        <link rel="shortcut icon" href="/assets/img/home/favicon.png" />
+        <link rel="shortcut icon" href="/assets/img/home/favicon.ico" />
+
+        <link rel="icon" href="/assets/img/home/favicon.png" />
+        <link rel="icon" href="/assets/img/home/favicon.ico" sizes="any" />
+        <title>LemonDev</title>
       </Head>
-      {/* <MetaSeo {...dataSeo} /> */}
+
       <div>
         {/* end header */}
-
         {children}
         {/* footer */}
       </div>

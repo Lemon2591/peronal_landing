@@ -19,7 +19,13 @@ class MyDocument extends Document {
     // @ts-ignore
     return (
       <Html id="html-main">
-        <Head></Head>
+        <Head>
+          <link rel="shortcut icon" href="/assets/img/favicon/favicon.png" />
+          <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
+
+          <link rel="icon" href="/assets/img/favicon/favicon.png" />
+          <link rel="icon" href="/assets/img/favicon/favicon.ico" sizes="any" />
+        </Head>
         <body>
           <Main />
           <NextScript />

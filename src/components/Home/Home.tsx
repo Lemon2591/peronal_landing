@@ -9,6 +9,7 @@ import Slider from "react-slick";
 import Slide_one from "./Slide_one";
 import * as Yup from "yup";
 import { useFormik } from "formik";
+import MetaSeo from "../MetaSeo";
 
 import { FcNext } from "react-icons/fc";
 import {
@@ -76,6 +77,7 @@ function Home() {
   // console.log(data);
   return (
     <>
+      <MetaSeo />
       <Slide_one currentSlide={currentSlide} />
 
       <div className="second-body">

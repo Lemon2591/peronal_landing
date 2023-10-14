@@ -7,6 +7,8 @@ import { loadFull } from "tsparticles";
 import { settingPar } from "../../ultill/settingPar";
 import Slider from "react-slick";
 import Slide_one from "./Slide_one";
+import * as Yup from "yup";
+import { useFormik } from "formik";
 
 import { FcNext } from "react-icons/fc";
 import {
@@ -15,8 +17,38 @@ import {
   AiOutlineLinkedin,
 } from "react-icons/ai";
 
+const dataSubmit = Yup.object().shape({
+  name: Yup.string().required("Name is required"),
+  email: Yup.string().required("Email is required").email("Wrong email format"),
+  phone: Yup.string()
+    .required("Phone number name is required")
+    .matches(/\d/g, "Is not in correct format")
+    .max(12, "Maximum 12 symbols"),
+});
+
+const initialValues = {
+  name: "",
+  email: "",
+  phone: "",
+  message: "",
+};
+
 function Home() {
+  const formik = useFormik<{
+    name: string;
+    email: string;
+    phone: string;
+    message: string;
+  }>({
+    initialValues,
+    validationSchema: dataSubmit,
+    onSubmit: (values) => {
+      console.log(values);
+    },
+  });
+
   const [currentSlide, setCurrentSlide] = useState<any>(0);
+
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadFull(engine);
   }, []);
@@ -41,6 +73,7 @@ function Home() {
     prevArrow: <></>,
   };
 
+  // console.log(data);
   return (
     <>
       <Slide_one currentSlide={currentSlide} />
@@ -491,38 +524,51 @@ function Home() {
                   <label htmlFor="name">Full Name</label>
                   <input
                     type="text"
-                    name="name"
+                    // name="name"
                     placeholder="Fill your full name, please !"
+                    {...formik.getFieldProps("name")}
                   />
+                  {formik.touched.name && formik.errors.name && (
+                    <span className="error_input">{formik.errors.name}</span>
+                  )}
                 </div>
 
                 <div>
                   <label htmlFor="email">Email</label>
                   <input
                     type="text"
-                    name="email"
+                    // name="email"
                     placeholder="Fill your email, please !"
+                    {...formik.getFieldProps("email")}
                   />
+                  {formik.touched.email && formik.errors.email && (
+                    <span className="error_input">{formik.errors.email}</span>
+                  )}
                 </div>
                 <div>
                   <label htmlFor="phone">Phone Number</label>
                   <input
                     type="text"
-                    name="phone"
+                    // name="phone"
                     placeholder="Fill your phone number, please !"
+                    {...formik.getFieldProps("phone")}
                   />
+                  {formik.touched.phone && formik.errors.phone && (
+                    <span className="error_input">{formik.errors.phone}</span>
+                  )}
                 </div>
 
                 <div>
                   <label htmlFor="message">Message</label>
                   <textarea
                     // type="text"
-                    name="message"
+                    // name="message"
                     placeholder="Type some message !"
+                    {...formik.getFieldProps("message")}
                   />
                 </div>
                 <div>
-                  <a>Send contact</a>
+                  <a onClick={formik.submitForm}>Send contact</a>
                 </div>
               </div>
               <div className="add_right">

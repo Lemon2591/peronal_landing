@@ -13,18 +13,18 @@ const route_container: IRoute[] = [
     text: "Home",
     href: "/",
   },
-  {
-    text: "Products",
-    href: "/products",
-  },
-  {
-    text: "About",
-    href: "/about",
-  },
-  {
-    text: "Contact",
-    href: "/contact",
-  },
+  // {
+  //   text: "Products",
+  //   href: "/products",
+  // },
+  // {
+  //   text: "About",
+  //   href: "/about",
+  // },
+  // {
+  //   text: "Contact",
+  //   href: "/contact",
+  // },
 ];
 
 export const Header: FC = () => {

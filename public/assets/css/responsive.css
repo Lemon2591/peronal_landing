@@ -20,7 +20,7 @@
 
     .project-carousel-flex {
         display: block;
-        height: max-content;
+        height: 750px;
     }
 
     .project-carousel-flex>div {
@@ -167,7 +167,7 @@
 
     .project-carousel-flex {
         display: block;
-        height: max-content;
+        height: 750px;
         padding: 15px;
     }
 

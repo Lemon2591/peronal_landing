@@ -9,7 +9,7 @@ const Layout: FC<{ children?: any; webViewMobile?: any; web?: any }> = ({
   return (
     <>
       <Head>
-        <meta charSet="UTF-8" />
+        <meta charSet="UTF-8" lang="vi" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
           name="viewport"

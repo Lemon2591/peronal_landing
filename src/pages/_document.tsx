@@ -18,7 +18,7 @@ class MyDocument extends Document {
   render() {
     // @ts-ignore
     return (
-      <Html id="html-main">
+      <Html id="html-main" lang="vi">
         <Head>
           <link rel="shortcut icon" href="/assets/img/favicon/favicon.png" />
           <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />

@@ -105,8 +105,8 @@ function Home() {
                 <div className="col-lg-7" data-aos="fade-left">
                   <img
                     className="img_home"
-                    src="/assets/img/page/item.png"
-                    alt=""
+                    src="/assets/img/page/item.webp"
+                    alt="image"
                   />
                 </div>
               </div>
@@ -508,7 +508,7 @@ function Home() {
                             </p>
                           </blockquote>
                           <div className="img_home_project">
-                            <img src="/assets/img/home/b.png" alt="" />
+                            <img src="/assets/img/home/b.webp" alt="image" />
                           </div>
                           <div className="d-flex justify-content-between border-top pt-3">
                             <div>
@@ -595,7 +595,7 @@ function Home() {
                             </p>
                           </blockquote>
                           <div className="img_home_project">
-                            <img src="/assets/img/home/a.png" alt="" />
+                            <img src="/assets/img/home/a.webp" alt="image" />
                           </div>
                           <div className="d-flex justify-content-between border-top pt-3">
                             <div>
@@ -678,7 +678,10 @@ function Home() {
                             </p>
                           </blockquote>
                           <div className="img_home_project">
-                            <img src="/assets/img/home/project_c.png" alt="" />
+                            <img
+                              src="/assets/img/home/project_c.webp"
+                              alt="image"
+                            />
                           </div>
                           <div className="d-flex justify-content-between border-top pt-3">
                             <div>

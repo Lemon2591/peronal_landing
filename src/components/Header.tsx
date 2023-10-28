@@ -6,34 +6,11 @@ interface IRoute {
   text: string;
   href: string;
 }
-
-const route_container: IRoute[] = [
-  {
-    text: "Home",
-    href: "/",
-  },
-];
-
 const Header: FC = () => {
   const route = useRouter();
 
   const [show_header, setShowHeader] = useState("");
   const [showHeaderMobile, setShowHeaderMobile] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener("scroll", stickyHeader);
-  }, []);
-
-  const stickyHeader = () => {
-    if (window.pageYOffset < 2) {
-      setShowHeader("");
-    } else if (window.scrollY > window.pageYOffset) {
-      setShowHeader("sticky");
-    } else if (window.scrollY < window.pageYOffset) {
-      setShowHeader("hide-l-header");
-    }
-    window.scrollY = window.pageYOffset;
-  };
 
   return (
     <>
@@ -55,10 +32,18 @@ const Header: FC = () => {
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            onClick={() => setShowHeaderMobile(!showHeaderMobile)}
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div
+            className={
+              showHeaderMobile
+                ? "collapse navbar-collapse show"
+                : "collapse navbar-collapse"
+            }
+            id="navbarSupportedContent"
+          >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link href="/#services">

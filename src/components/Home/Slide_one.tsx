@@ -1,5 +1,5 @@
 import React, { useState, useEffect, FC } from "react";
-import { Header } from "../Header";
+import Header from "../Header";
 import Particles from "react-particles";
 import { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
@@ -10,7 +10,7 @@ import { useTypewriter } from "use-typewriter-hook";
 
 import Typewriter from "typewriter-effect";
 
-function Slide_one({ currentSlide }: any) {
+function Slide_one() {
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadFull(engine);
   }, []);

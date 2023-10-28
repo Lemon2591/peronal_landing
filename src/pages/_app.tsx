@@ -1,23 +1,40 @@
 import Head from "next/head";
-import "../../public/assets/css/base.css";
-import "../../public/assets/css/main.css";
-import "../../public/assets/css/responsive.css";
-
+import "../../assets/css/theme.css";
+// import "../../assets/css/theme.min.css";
+import "../../assets/css/base.css";
+import "../../assets/css/main.css";
+import "../../assets/css/responsive.css";
 import LoadingPage from "@/components/LoadingPage";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+import Layout from "@/components/Layout";
 import { useState, useEffect } from "react";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 import type { AppProps } from "next/app";
 
-// import "@antd/dist/antd.css";
-
 function MyApp({ Component, pageProps }: AppProps) {
   const [isLoadingPage, setIsLoadingPage] = useState<string>("active");
+
+  useEffect(() => {
+    let scrollpos = window.scrollY;
+    const header = document.getElementById("navScroll");
+    const header_height = header?.offsetHeight || 0;
+    const add_class_on_scroll = () =>
+      header?.classList.add("scrolled", "shadow-sm");
+    const remove_class_on_scroll = () =>
+      header?.classList.remove("scrolled", "shadow-sm");
+    window.addEventListener("scroll", function () {
+      scrollpos = window.scrollY;
+      if (scrollpos >= header_height) {
+        add_class_on_scroll();
+      } else {
+        remove_class_on_scroll();
+      }
+    });
+  }, []);
 
   useEffect(() => {
     AOS.init({
@@ -37,11 +54,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <Head>
-        {/* <meta name="twitter:image" content="https://www.gcode.jp/images/ogp-pc.png" /> */}
-      </Head>
-      <LoadingPage isLoadingPage={isLoadingPage} />
-      <Component {...pageProps} />
+      <Layout>
+        <LoadingPage isLoadingPage={isLoadingPage} />
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }

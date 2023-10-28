@@ -1,7 +1,9 @@
 import React, { FC, useEffect, useState } from "react";
 import Head from "next/head";
+import Footer from "./Footer";
+import Header from "./Header";
 
-const Layout: FC<{ children?: any; webViewMobile: boolean; web: string }> = ({
+const Layout: FC<{ children?: any; webViewMobile?: any; web?: any }> = ({
   children,
 }) => {
   return (
@@ -22,9 +24,11 @@ const Layout: FC<{ children?: any; webViewMobile: boolean; web: string }> = ({
       </Head>
 
       <div>
+        <Header />
         {/* end header */}
         {children}
         {/* footer */}
+        <Footer />
       </div>
     </>
   );

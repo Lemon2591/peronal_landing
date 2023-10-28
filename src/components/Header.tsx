@@ -45,7 +45,10 @@ const Header: FC = () => {
             id="navbarSupportedContent"
           >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
+              <li
+                className="nav-item"
+                onClick={() => setShowHeaderMobile(!showHeaderMobile)}
+              >
                 <Link href="/#services">
                   <a
                     className="nav-link"
@@ -55,22 +58,34 @@ const Header: FC = () => {
                   </a>
                 </Link>
               </li>
-              <li className="nav-item">
+              <li
+                className="nav-item"
+                onClick={() => setShowHeaderMobile(!showHeaderMobile)}
+              >
                 <Link href="/#aboutus">
                   <a className="nav-link">Về tôi</a>
                 </Link>
               </li>
-              <li className="nav-item">
+              <li
+                className="nav-item"
+                onClick={() => setShowHeaderMobile(!showHeaderMobile)}
+              >
                 <Link href="/#experience">
                   <a className="nav-link">Kinh nghiệm</a>
                 </Link>
               </li>
-              <li className="nav-item">
+              <li
+                className="nav-item"
+                onClick={() => setShowHeaderMobile(!showHeaderMobile)}
+              >
                 <Link href="/#project">
                   <a className="nav-link">Dự án</a>
                 </Link>
               </li>
-              <li className="nav-item">
+              <li
+                className="nav-item"
+                onClick={() => setShowHeaderMobile(!showHeaderMobile)}
+              >
                 <Link href="/contact">
                   <a className="nav-link">Liên hệ</a>
                 </Link>

@@ -31,9 +31,19 @@
     .res_mb_new>div:nth-child(2) img {
         padding: 100px;
     }
+
+    .img_home {
+        width: 100% !important;
+        height: unset !important;
+    }
 }
 
 @media (min-width:740px) and (max-width:1025px) {
+    .img_home {
+        width: 100% !important;
+        height: unset !important;
+    }
+
     .header_desktop {
         display: none;
     }
@@ -60,6 +70,11 @@
 }
 
 @media (max-width:739px) {
+    .img_home {
+        width: 100% !important;
+        height: unset !important;
+    }
+
     .loading-web>div>h1 {
         font-size: 16px;
     }

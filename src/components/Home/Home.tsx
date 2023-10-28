@@ -107,6 +107,8 @@ function Home() {
                     className="img_home"
                     src="/assets/img/page/item.webp"
                     alt="image"
+                    width="525px"
+                    height="565px"
                   />
                 </div>
               </div>
@@ -508,7 +510,12 @@ function Home() {
                             </p>
                           </blockquote>
                           <div className="img_home_project">
-                            <img src="/assets/img/home/b.webp" alt="image" />
+                            <img
+                              src="/assets/img/home/b.webp"
+                              alt="image"
+                              width="255px"
+                              height="150px"
+                            />
                           </div>
                           <div className="d-flex justify-content-between border-top pt-3">
                             <div>
@@ -595,7 +602,12 @@ function Home() {
                             </p>
                           </blockquote>
                           <div className="img_home_project">
-                            <img src="/assets/img/home/a.webp" alt="image" />
+                            <img
+                              src="/assets/img/home/a.webp"
+                              alt="image"
+                              width="255px"
+                              height="150px"
+                            />
                           </div>
                           <div className="d-flex justify-content-between border-top pt-3">
                             <div>
@@ -681,6 +693,8 @@ function Home() {
                             <img
                               src="/assets/img/home/project_c.webp"
                               alt="image"
+                              width="255px"
+                              height="150px"
                             />
                           </div>
                           <div className="d-flex justify-content-between border-top pt-3">

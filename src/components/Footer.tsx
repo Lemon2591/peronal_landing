@@ -12,12 +12,9 @@ const Footer = () => {
               <address className="text-secondary mt-3">
                 <strong>Lemon Dev.</strong>
                 <br />
-                Số 40, Ngõ 79
+                Địa chỉ: Số 40, Ngõ 79, Cầu Giấy, Hà Nội
                 <br />
-                Cầu Giấy, Hà Nội
-                <br />
-                <abbr title="Phone">Phone: </abbr>
-                0868 158 218
+                Liên hệ: 0868 158 218
               </address>
             </div>
             <div className="col-12 col-lg-6 col-xl-4 border-end p-5">

@@ -12,6 +12,7 @@ import "aos/dist/aos.css";
 import Layout from "@/components/Layout";
 import { useState, useEffect } from "react";
 // import "bootstrap/dist/css/bootstrap.min.css";
+import "lazysizes";
 
 import type { AppProps } from "next/app";
 

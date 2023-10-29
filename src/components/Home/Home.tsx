@@ -90,8 +90,8 @@ function Home() {
                     LemonDev
                   </h1>
                   <p className="lead">
-                    Xin chào! <br /> Tôi tên là Tuấn Anh, tôi đang là nhà phát
-                    triển website !
+                    Xin chào ! <br /> Tôi tên là Tuấn Anh, tôi đang là nhà phát
+                    triển website.
                   </p>
                   <Link href="/contact">
                     <a
@@ -104,7 +104,7 @@ function Home() {
                 </div>
                 <div className="col-lg-7" data-aos="fade-left">
                   <img
-                    className="img_home"
+                    className="img_home lazyload"
                     src="/assets/img/page/item.webp"
                     alt="image"
                     width="525px"
@@ -122,8 +122,7 @@ function Home() {
                   <h2 className="display-6">
                     Tôi chuyên lập trình website, desktop app, thiết kế hệ
                     thống, hỗ trợ đồ án với ngôn ngữ lập trình như JavaScript,
-                    Golang và một sốt framework phổ biến như: ReactJS, NextJS,
-                    Vue, Express và NestJS.
+                    Golang.
                   </h2>
                 </div>
               </div>
@@ -515,6 +514,7 @@ function Home() {
                               alt="image"
                               width="255px"
                               height="150px"
+                              className="lazyload"
                             />
                           </div>
                           <div className="d-flex justify-content-between border-top pt-3">
@@ -533,7 +533,7 @@ function Home() {
                     <a
                       className="col-12 col-lg-6 col-xl-4"
                       data-aos="fade-right"
-                      href="hhttps://edubin.lemondev.id.vn/"
+                      href="https://edubin.lemondev.id.vn/"
                       target="_blank"
                       style={{ textDecoration: "none" }}
                     >
@@ -607,6 +607,7 @@ function Home() {
                               alt="image"
                               width="255px"
                               height="150px"
+                              className="lazyload"
                             />
                           </div>
                           <div className="d-flex justify-content-between border-top pt-3">
@@ -695,6 +696,7 @@ function Home() {
                               alt="image"
                               width="255px"
                               height="150px"
+                              className="lazyload"
                             />
                           </div>
                           <div className="d-flex justify-content-between border-top pt-3">

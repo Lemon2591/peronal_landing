@@ -980,10 +980,16 @@ body {
 
 .img_home {
     width: 100%;
-    padding-right: 50px;
+    /* padding-right: ; */
+    margin-left: 30%;
     animation: animate_gif 2s infinite alternate;
 }
 
+
+.envkaejanfasf {
+    display: flex;
+    align-items: center;
+}
 
 @keyframes animate_gif {
     from {

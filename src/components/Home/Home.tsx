@@ -102,7 +102,7 @@ function Home() {
                     </a>
                   </Link>
                 </div>
-                <div className="col-lg-7" data-aos="fade-left">
+                <div className="col-lg-7 envkaejanfasf" data-aos="fade-left">
                   <img
                     className="img_home lazyload"
                     src="/assets/img/page/item.webp"
